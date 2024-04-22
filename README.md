@@ -22,7 +22,7 @@ URL: mongodb://localhost:27017/nest-pokemon
 ```
 5. Install mongo connection dependences
 ```
-npm i @nestjs/mongoose mongoose
+> npm i @nestjs/mongoose mongoose
 ```
 6. Import mongoose in @Module
 ```
@@ -38,8 +38,10 @@ MongooseModule.forRoot('mongodb://localhost:27017/nest-pokemon')
 * Nest
 
 ## Notes:
-* Validators to install with npm: class-validator class-transformer
-
+* Validators
+```
+> npm i class-validator class-transformer
+```
 
 ## Endpoints
 * Seed
