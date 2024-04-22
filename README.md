@@ -39,3 +39,10 @@ MongooseModule.forRoot('mongodb://localhost:27017/nest-pokemon')
 
 ## Notes:
 * Validators to install with npm: class-validator class-transformer
+
+
+## Endpoints
+* Seed
+```
+http://localhost:3000/api/v2/seed
+```
