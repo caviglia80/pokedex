@@ -1,0 +1,26 @@
+dist/
+node_modules/
+.gitignore
+
+.git/
+
+# Ignorar archivos de respaldo
+*.bak
+*.backup
+
+# Ignorar archivos de logs
+logs/
+
+# Ignorar directorios y archivos de dependencias locales o temporales
+bower_components/
+.cache/
+.tmp/
+
+# Ignorar archivos de compilación
+*.log
+*.tar.gz
+*.zip
+
+# Ignorar archivos de desarrollo o herramientas locales
+.idea/
+.vscode/
