@@ -28,9 +28,14 @@ URL: mongodb://localhost:27017/nest-pokemon
 ```
 MongooseModule.forRoot('mongodb://localhost:27017/nest-pokemon')
 ```
-7. Add /mongo to .gitignore
+7. Add to .gitignore
 ```
-/mongo 
+/mongo
+.env
+```
+8. To use .env
+```
+> npm i @nestjs/config
 ```
 
 ## Stack
@@ -47,4 +52,10 @@ MongooseModule.forRoot('mongodb://localhost:27017/nest-pokemon')
 * Seed
 ```
 http://localhost:3000/api/v2/seed
+```
+
+## Use
+* Levantar BD
+```
+> docker-compose up -d 
 ```
