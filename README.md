@@ -58,4 +58,14 @@ http://localhost:3000/api/v2/seed
 * Levantar BD
 ```
 > docker-compose up -d 
+> docker-compose up --build // este solo si hago algun cambio en codigo o configuraciones
+```
+* BUILD
+```
+> docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build    // construir
+> docker-compose -f docker-compose.prod.yaml up --build // o este
+```
+* Run (si se construyo una vez y tengo las imagenes, solo debo ejecutar este comando)
+```
+> docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
 ```
