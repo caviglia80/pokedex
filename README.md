@@ -38,10 +38,6 @@ MongooseModule.forRoot('mongodb://localhost:27017/nest-pokemon')
 > npm i @nestjs/config
 ```
 
-## Stack
-* MongoDB
-* Nest
-
 ## Notes:
 * Validators
 ```
@@ -54,18 +50,23 @@ MongooseModule.forRoot('mongodb://localhost:27017/nest-pokemon')
 http://localhost:3000/api/v2/seed
 ```
 
-## Use
+## Use (con una imagen simple)
 * Levantar BD
 ```
 > docker-compose up -d 
 > docker-compose up --build // este solo si hago algun cambio en codigo o configuraciones
 ```
-* BUILD
+## PRODUCTION BUILD
+1. Crear archivo ```.env.prod``` con las variables de entorno.
+2. Crear nueva imagen
 ```
-> docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build    // construir
-> docker-compose -f docker-compose.prod.yaml up --build // o este
+> docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
 ```
-* Run (si se construyo una vez y tengo las imagenes, solo debo ejecutar este comando)
+o
+```
+> docker-compose -f docker-compose.prod.yaml up --build
+```
+## Run
 ```
 > docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
 ```
