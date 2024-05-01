@@ -31,7 +31,7 @@ MongooseModule.forRoot('mongodb://localhost:27017/nest-pokemon')
 7. Add to .gitignore
 ```
 /mongo
-.env
+.env 
 ```
 8. To use .env
 ```
